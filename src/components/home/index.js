@@ -6,15 +6,22 @@ class Home extends Component {
     // }
     constructor(props) {
         super(props);
-        this.state = {
-
-        }
     }
 
     render() {
         return (
             <div>Welcome to Portal Point</div>
         )
+    }
+}
+
+const mapStateToProps = (state) => {
+    return {isLogged : state.isLogged}
+}
+
+const mapDispatchToProps = () => {
+    return {
+        loadLogin : ()=>dispath(actionCreator.loadLogin())
     }
 }
 
