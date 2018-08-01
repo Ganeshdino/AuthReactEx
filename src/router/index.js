@@ -7,9 +7,11 @@ import Login from '../components/login'
 const routes = (props) => {
     return (
         <BrowserRouter>
-            <Route exact path='/' component={Home} />
-            <Route path='/home' component={Home} />
-            <Route path='/login' component={Login} />
+            <div>
+                <Route exact path='/' component={Home} />
+                <Route path='/home' component={Home} />
+                <Route path='/login' component={Login} />
+            </div>
         </BrowserRouter>
     )
 }

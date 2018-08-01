@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import Header from './header';
+import Footer from './footer';
 
 class Login extends Component {
     constructor(props) {
@@ -7,7 +8,10 @@ class Login extends Component {
     }
 
     render() {
-
+        <div>
+            <Header />
+            <Footer />
+        </div>
     }
 }
 
