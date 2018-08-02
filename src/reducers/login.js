@@ -3,6 +3,6 @@ const initialState = {
     callback : []
 }
 
-export default login = (state = initialState, action) => {
+export const login = (state = initialState, action) => {
     return state;
 }

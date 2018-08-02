@@ -35,13 +35,13 @@ module.exports = {
                exclude : /node_modules/
            },
            {
-               test : /\.css$/,
+               test : /\.s?css$/,
                use : [
                     {loader: 'style-loader'},
                     {
                         loader: 'css-loader',
                         options: {
-                            importLoaders:1,
+                          //  importLoaders:1,
                             modules: true,
                             localIdentName: '[name]__[local]__[hash:base64:5]'
                         }
@@ -60,8 +60,7 @@ module.exports = {
                             }
                         }
                     }
-               ],
-               exclude : /node_modules/
+               ]
             },
           {
               test : /\.png|.jpe?g|gif|svg/,
